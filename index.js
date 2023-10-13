@@ -5,7 +5,9 @@ const dotenv = require("dotenv").config();
 const ejs = require('ejs');
 const PORT = process.env.PORT || 4011
 const authRouter = require ('./route/authRoute');
-const workoutRoute = require("./routes/workoutRoutes")
+const workoutRoute = require("./route/workoutRoutes")
+const categoryRouter = require("./route/categoryRoute");
+
 
 
 
@@ -23,6 +25,7 @@ app.use(cookieParser());
 
 app.use('/api/user', authRouter);
 app.use('/api/workouts', workoutRoute);
+app.use('/api/category', categoryRouter);
 
 
 

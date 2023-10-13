@@ -2,7 +2,7 @@ const express = require('express')
 //Instead of using app
 //Handles all the routes in the file
 const router = express.Router()
-const workoutsCtrl = require('../controllers/workoutsCtrl')
+const workoutsCtrl = require('../controller/workoutsController')
 
 //Import the ... module
 router.get('/api/workouts', workoutsCtrl.indexWorkouts )

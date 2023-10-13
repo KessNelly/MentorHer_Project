@@ -1,6 +1,6 @@
 //Import the model
-const Workouts = require('../models/Workout')
-
+const Workouts = require('../model/Workout')
+   
 //Get all workout objects
 const indexWorkouts = async (req, res) => {
     //Go into Book and get the objects
